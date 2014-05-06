@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+  // Smooth scroll
+  
   $('a[href*=#]').click(function() {
 
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
@@ -16,4 +19,17 @@ $(document).ready(function(){
       }
     }
   });
+
+// Slide toggles
+
+  $("pre").hide();
+
+  $(".sourceButton").click(function(){
+    var $this = $(this);
+    $this.find("pre").slideToggle();
+  });
+
+
+});
+
 });
