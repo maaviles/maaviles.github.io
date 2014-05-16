@@ -1,237 +1,56 @@
-@import "sassy/reset";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-// **************** Fonts
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700");
-
-// **************** Colors
-$color1: #11B480;
-$color2: #424244;
-
-// **************** Image Background
-$pattern: "http://thepatternlibrary.com/img/ao.gif";
-
-// **************** Mixins
-
-
-// Global
-//*************************************************
-
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif;
-}
-
-h1 {
-  font-size: 4em;
-  padding-bottom: 1em;
-}
-
-h2 {
-  font-size: 2em;
-  background-color: darken($color1, 5);
-  padding-bottom: .75em;
-}
-
-h4 {
-  font-size: 1.5em;
-}
-
-a {
-  color: darken(white, 50%);
-  padding-top: 1em;
-  padding-bottom: 1em;
-  text-decoration: none;
-  &:hover {
-    //text-decoration: underline;
-    color: lighten($color2, 5%);
-  }
-}
+@import "bourbon/bourbon";
+@import "bitters/bitters";
 
 header {
-  position: fixed;
   width: 100%;
-  height: 3.5em;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(0.62, #424244),
-    color-stop(1, #616161)
-  );
-  background-image: -o-linear-gradient(top, #424244 62%, #616161 100%);
-  background-image: -moz-linear-gradient(top, #424244 62%, #616161 100%);
-  background-image: -webkit-linear-gradient(top, #424244 62%, #616161 100%);
-  background-image: -ms-linear-gradient(top, #424244 62%, #616161 100%);
-  background-image: linear-gradient(to top, #424244 62%, #616161 100%);
-  z-index: 99;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
-}
-
-ul.socialIcons {
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
-  margin: 0.8em 1em;
-  margin-top: 2em;
+  height: auto;
+  padding-top: 5em;
+  background: darken(navajowhite, 10%);
+  .img {
+    width: 20em;
+    height: 20em;
+    background: url("http://i.imgur.com/NWDoc2g.jpg");
+    background-size: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 7px solid white;
+  }
+  div {
+  }
+  h1 {
+    font-size: 5em;
+    padding-top: 4%;
+    padding-left: 25%;
+    color: steelblue;
+    span {
+      margin-left: -25px;
+      color: darken(steelblue, 20%);
+    }
+  }
+  p {
+    font-size: 2em;
+    padding-left: 45%;
+    margin-top: -.5em;
+  }
+  ul {
+    font-size: 3em;
+    text-align: center;
+  }
   li {
     display: inline-block;
-    margin: .2em;
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-bottom: 2em;
   }
-}
-
-.button {
-  text-decoration: none;
-  padding: .7em;
-  font-size: 1em;
-  color: white;
-  background: $color1;
-  border-radius: 20px;
-  border: solid white 2px;
-  &:hover {
-    background: darken($color1, 5%);
-  }
-}
-
-span {
-  padding-right: 1em;
-  padding-left: 1em;
-  border-radius: 20px;
-  border: solid white 2px;
-  background-color: $color2;
-}
-
-//*************************************************
-
-.main-navigation {
-  list-style-type: none;
-  text-align: center;
-  padding-top: .25em;
-  margin: 0.8em 1em;
-  li {
-    display: inline-block;
-    a {
-      padding: 0.4em 0.7em;
-      margin: .2em;
-      background: $color1;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #fff;
-      border-radius: 20px;
-      border: solid white 2px;
-      &:hover {
-        background: darken($color1, 5%);
-      }      
-    }
-  }
-}
-
-// Edit Sections
-// ************************************************
-
-section {
-  min-height: 100%;
-  position: relative;
-  padding: 3em 1em 1em;
-  color: #fff;
-  text-align: center;
-  h2 {
-    padding-top: .5em;
-  }
-  &.one {
-    padding-top: 11em;
-    background: $color2;
-    background:
-      url($pattern) 100% 0 repeat fixed;
-    background-size: 100%;
-  }
-  &.two {
-    background: $color1;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
-    h3 {
-      font-size: 3em;
-      padding-top: .5em;
-      padding-bottom: .5em;
-    }
-    .accordion {
-      padding-right: 10%;
-      padding-left: 10%;
-      label {
-        padding: 5px 20px;
-        position: relative;
-        margin-bottom: 1em;
-        z-index: 20;
-        display: block;
-        height: 50px;
-        cursor: pointer;
-        line-height: 33px;
-        font-size: 2em;
-        border-radius: 20px;
-        color: white;
-        background-color: $color2;
-        &:hover {
-          background: lighten($color2, 5%);
-        }
-      }
-      input {
-        display: none;
-        &:checked ~ article {
-          -webkit-transition: height 2s ease-in-out;
-          -moz-transition: height 2s ease-in-out;
-          -o-transition: height 2s ease-in-out;
-          -ms-transition: height 2s ease-in-out;
-          transition: height 2s ease-in-out;
-          height: 100%;
-        }
-      }
-      article {
-        margin-top: -1px;
-        overflow: hidden;
-        height: 0px;
-        position: relative;
-        z-index: 10;
-        // -webkit-transition: height 2s ease-in-out;
-        // -moz-transition: height 2s ease-in-out;
-        // -o-transition: height 2s ease-in-out;
-        // -ms-transition: height 2s ease-in-out;
-        // transition: height 2s ease-in-out;
-      }
-    }
-    figure {
-      padding-top: 1em;
-    }
-    img {
-      width: 60%;
-    }
-    p {
-      padding-top: 1em;
-    }
-  }
-
-  &.three {
-    background: #5a986d;
-    background:
-      url($pattern) 100% 0 repeat fixed;
-    background-size: 100%;
-      section {
-        padding-top: 5%;
-        padding-right: 10%;
-        padding-left: 50%;
-        p {
-          font-size: 1.2em;
-        }
-      }
-  }
-  &.four {
-    background: $color1;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
-    .contact {
-      padding-top: 2em;
-    }
-    a {
-      text-decoration: none;
+  a {
+    color: slategray;
+    &:hover {
+      color: darken(steelblue, 25%);
+      transition: 1s;
     }
   }
 }

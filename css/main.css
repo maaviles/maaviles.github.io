@@ -1,259 +1,278 @@
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700");
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, menu, time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  background: transparent; }
-
-* {
-  -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+button,
+input[type="submit"] {
+  border: 1px solid #2459a6;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #89a8d5;
+  color: white;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: #477dca;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #477dca), color-stop(100%, #2760b2));
+  background-image: -webkit-linear-gradient(#477dca, #2760b2);
+  background-image: linear-gradient(#477dca, #2760b2);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #1b4f9a;
+  background-clip: padding-box;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1em; }
+  button:hover:not(:disabled),
+  input[type="submit"]:hover:not(:disabled) {
+    box-shadow: inset 0 1px 0 0 #628cc8;
+    cursor: pointer;
+    background-color: #3c71bb;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3c71bb), color-stop(100%, #255aa5));
+    background-image: -webkit-linear-gradient(#3c71bb, #255aa5);
+    background-image: linear-gradient(#3c71bb, #255aa5); }
+  button:active:not(:disabled),
+  input[type="submit"]:active:not(:disabled) {
+    border: 1px solid #2459a6;
+    box-shadow: inset 0 0 8px 4px #235397, inset 0 0 8px 4px #235397, 0 1px 1px 0 #eeeeee; }
+  button:disabled,
+  input[type="submit"]:disabled {
+    opacity: 0.5;
+    cursor: not-allowed; }
 
 body {
-  font-size: 100%;
-  -webkit-font-smoothing: antialiased; }
+  color: #333333;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em; }
 
-article, aside, figure, footer, header, hgroup, nav, section {
-  display: block; }
-
-img, object, embed {
-  max-width: 100%; }
-
-img {
-  border-style: none;
-  border-color: transparent;
-  border-width: 0; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none; }
-
-a {
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.25em;
   margin: 0;
-  padding: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent; }
-  a:focus {
-    text-decoration: underline;
-    outline: none; }
-
-del {
-  text-decoration: line-through; }
-
-pre {
-  white-space: pre-wrap;
-  word-wrap: break-word; }
-
-input[type="radio"] {
-  vertical-align: text-bottom; }
-
-input, textarea, select, button {
-  font-family: inherit;
-  font-weight: inherit;
-  background-color: #fff;
-  border: 0;
-  padding: 0;
-  margin: 0; }
-
-table {
-  font-size: inherit; }
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-pre, code, kbd, samp {
-  font-family: monospace, sans-serif; }
-
-.clickable, input[type=button], input[type=submit] {
-  cursor: pointer; }
-
-button {
-  cursor: pointer;
-  margin: 0;
-  width: auto;
-  overflow: visible; }
-
-a.button {
-  display: inline-block; }
-
-.ie7 img {
-  -ms-interpolation-mode: bicubic; }
-
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', sans-serif; }
+  text-rendering: optimizeLegibility; }
 
 h1 {
-  font-size: 4em;
-  padding-bottom: 1em; }
+  font-size: 2.25em; }
 
 h2 {
-  font-size: 2em;
-  background-color: #0f9d6f;
-  padding-bottom: .75em; }
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.75em; }
 
 h4 {
   font-size: 1.5em; }
 
+h5 {
+  font-size: 1.25em; }
+
+h6 {
+  font-size: 1em; }
+
+p {
+  margin: 0 0 0.75em; }
+
 a {
-  color: gray;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  text-decoration: none; }
+  color: #477dca;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear; }
   a:hover {
-    color: #4f4f51; }
+    color: #2c5999; }
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+hr {
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+img {
+  margin: 0;
+  max-width: 100%; }
+
+abbr, acronym {
+  border-bottom: 1px dotted #dddddd;
+  cursor: help; }
+
+address {
+  display: block;
+  margin: 0 0 0.75em; }
+
+hgroup {
+  margin-bottom: 0.75em; }
+
+del {
+  color: #595959; }
+
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+cite {
+  color: #737373;
+  font-style: italic; }
+  cite:before {
+    content: '\2014 \00A0'; }
+
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em; }
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  label.required:after {
+    content: "*"; }
+  label abbr {
+    display: none; }
+
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.1875em;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+textarea {
+  resize: vertical; }
+
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+input[type="file"] {
+  width: 100%; }
+
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1.5em; }
+
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0; }
+
+tr, td, th {
+  vertical-align: middle; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+dl {
+  line-height: 1.5em;
+  margin-bottom: 0.75em; }
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  dl dd {
+    margin: 0; }
 
 header {
-  position: fixed;
   width: 100%;
-  height: 3.5em;
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.62, #424244), color-stop(1, #616161));
-  background-image: -o-linear-gradient(top, #424244 62%, #616161 100%);
-  background-image: -moz-linear-gradient(top, #424244 62%, #616161 100%);
-  background-image: -webkit-linear-gradient(top, #424244 62%, #616161 100%);
-  background-image: -ms-linear-gradient(top, #424244 62%, #616161 100%);
-  background-image: linear-gradient(to top, #424244 62%, #616161 100%);
-  z-index: 99;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); }
-
-ul.socialIcons {
-  list-style-type: none;
-  text-align: center;
-  padding: 0;
-  margin: 0.8em 1em;
-  margin-top: 2em; }
-  ul.socialIcons li {
+  height: auto;
+  padding-top: 5em;
+  background: #ffc97a; }
+  header .img {
+    width: 20em;
+    height: 20em;
+    background: url("http://i.imgur.com/NWDoc2g.jpg");
+    background-size: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 7px solid white; }
+  header h1 {
+    font-size: 5em;
+    padding-top: 4%;
+    padding-left: 25%;
+    color: steelblue; }
+    header h1 span {
+      margin-left: -25px;
+      color: #294d6b; }
+  header p {
+    font-size: 2em;
+    padding-left: 45%;
+    margin-top: -.5em; }
+  header ul {
+    font-size: 3em;
+    text-align: center; }
+  header li {
     display: inline-block;
-    margin: .2em; }
-
-.button {
-  text-decoration: none;
-  padding: .7em;
-  font-size: 1em;
-  color: white;
-  background: #11b480;
-  border-radius: 20px;
-  border: solid white 2px; }
-  .button:hover {
-    background: #0f9d6f; }
-
-span {
-  padding-right: 1em;
-  padding-left: 1em;
-  border-radius: 20px;
-  border: solid white 2px;
-  background-color: #424244; }
-
-.main-navigation {
-  list-style-type: none;
-  text-align: center;
-  padding-top: .25em;
-  margin: 0.8em 1em; }
-  .main-navigation li {
-    display: inline-block; }
-    .main-navigation li a {
-      padding: 0.4em 0.7em;
-      margin: .2em;
-      background: #11b480;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #fff;
-      border-radius: 20px;
-      border: solid white 2px; }
-      .main-navigation li a:hover {
-        background: #0f9d6f; }
-
-section {
-  min-height: 100%;
-  position: relative;
-  padding: 3em 1em 1em;
-  color: #fff;
-  text-align: center; }
-  section h2 {
-    padding-top: .5em; }
-  section.one {
-    padding-top: 11em;
-    background: #424244;
-    background: url("http://thepatternlibrary.com/img/ao.gif") 100% 0 repeat fixed;
-    background-size: 100%; }
-  section.two {
-    background: #11b480;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); }
-    section.two h3 {
-      font-size: 3em;
-      padding-top: .5em;
-      padding-bottom: .5em; }
-    section.two .accordion {
-      padding-right: 10%;
-      padding-left: 10%; }
-      section.two .accordion label {
-        padding: 5px 20px;
-        position: relative;
-        margin-bottom: 1em;
-        z-index: 20;
-        display: block;
-        height: 50px;
-        cursor: pointer;
-        line-height: 33px;
-        font-size: 2em;
-        border-radius: 20px;
-        color: white;
-        background-color: #424244; }
-        section.two .accordion label:hover {
-          background: #4f4f51; }
-      section.two .accordion input {
-        display: none; }
-        section.two .accordion input:checked ~ article {
-          -webkit-transition: height 2s ease-in-out;
-          -moz-transition: height 2s ease-in-out;
-          -o-transition: height 2s ease-in-out;
-          -ms-transition: height 2s ease-in-out;
-          transition: height 2s ease-in-out;
-          height: 100%; }
-      section.two .accordion article {
-        margin-top: -1px;
-        overflow: hidden;
-        height: 0px;
-        position: relative;
-        z-index: 10; }
-    section.two figure {
-      padding-top: 1em; }
-    section.two img {
-      width: 60%; }
-    section.two p {
-      padding-top: 1em; }
-  section.three {
-    background: #5a986d;
-    background: url("http://thepatternlibrary.com/img/ao.gif") 100% 0 repeat fixed;
-    background-size: 100%; }
-    section.three section {
-      padding-top: 5%;
-      padding-right: 10%;
-      padding-left: 50%; }
-      section.three section p {
-        font-size: 1.2em; }
-  section.four {
-    background: #11b480;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5); }
-    section.four .contact {
-      padding-top: 2em; }
-    section.four a {
-      text-decoration: none; }
+    padding-right: .5em;
+    padding-left: .5em;
+    padding-bottom: 2em; }
+  header a {
+    color: slategray; }
+    header a:hover {
+      color: #224058;
+      transition: 1s; }
