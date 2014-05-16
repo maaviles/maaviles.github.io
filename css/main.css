@@ -263,7 +263,7 @@ header {
       header div {
         width: auto;
         margin: auto; } }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
       header div {
         width: auto;
         margin: auto; } }
@@ -276,7 +276,7 @@ header {
       header h1 {
         text-align: center;
         padding-left: 0; } }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
       header h1 {
         text-align: center;
         padding-left: 0; } }
@@ -300,7 +300,7 @@ header {
         margin-top: 1em;
         text-align: center;
         padding-left: 0; } }
-    @media screen and (max-width: 1000px) {
+    @media screen and (max-width: 1024px) {
       header p {
         margin-top: .5em;
         text-align: center;
