@@ -5,6 +5,7 @@
 @import "bitters/bitters";
 
 $mobile: new-breakpoint(max-width 480px);
+$tablet: new-breakpoint(max-width 950px);
 
 header {
   width: 100%;
@@ -33,6 +34,10 @@ header {
       text-align: center;
       padding-left: 0;
     }
+    @include media($tablet) {
+      text-align: center;
+      padding-left: 0;
+    }
     span {
       margin-left: -25px;
       color: darken(steelblue, 20%);
@@ -48,6 +53,11 @@ header {
     margin-top: -.5em;
     @include media($mobile) {
       margin-top: 1em;
+      text-align: center;
+      padding-left: 0;
+    }
+    @include media($tablet) {
+      margin-top: .5em;
       text-align: center;
       padding-left: 0;
     }

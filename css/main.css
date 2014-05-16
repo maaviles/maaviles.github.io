@@ -265,6 +265,10 @@ header {
       header h1 {
         text-align: center;
         padding-left: 0; } }
+    @media screen and (max-width: 950px) {
+      header h1 {
+        text-align: center;
+        padding-left: 0; } }
     header h1 span {
       margin-left: -25px;
       color: #294d6b; }
@@ -279,6 +283,11 @@ header {
     @media screen and (max-width: 480px) {
       header p {
         margin-top: 1em;
+        text-align: center;
+        padding-left: 0; } }
+    @media screen and (max-width: 950px) {
+      header p {
+        margin-top: .5em;
         text-align: center;
         padding-left: 0; } }
   header ul {
