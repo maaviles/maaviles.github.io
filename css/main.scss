@@ -6,7 +6,7 @@
 
 $mobile: new-breakpoint(max-width 480px);
 $tablet: new-breakpoint(max-width 950px);
-$large: new-breakpoint(min-width 1024px);
+$large: new-breakpoint(max-width 1024px);
 
 header {
   width: 100%;
