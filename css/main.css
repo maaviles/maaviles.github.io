@@ -1,4 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 button,
 input[type="submit"] {
   border: 1px solid #2459a6;
@@ -256,13 +261,26 @@ header {
     padding-top: 4%;
     padding-left: 25%;
     color: steelblue; }
+    @media screen and (max-width: 480px) {
+      header h1 {
+        text-align: center;
+        padding-left: 0; } }
     header h1 span {
       margin-left: -25px;
       color: #294d6b; }
+      @media screen and (max-width: 480px) {
+        header h1 span {
+          margin-left: 0;
+          text-align: center; } }
   header p {
     font-size: 2em;
     padding-left: 45%;
     margin-top: -.5em; }
+    @media screen and (max-width: 480px) {
+      header p {
+        margin-top: 1em;
+        text-align: center;
+        padding-left: 0; } }
   header ul {
     font-size: 3em;
     text-align: center; }
@@ -271,6 +289,12 @@ header {
     padding-right: .5em;
     padding-left: .5em;
     padding-bottom: 2em; }
+    @media screen and (max-width: 480px) {
+      header li {
+        text-align: center;
+        padding-right: .2em;
+        padding-left: .2em;
+        padding-top: .5em; } }
   header a {
     color: slategray; }
     header a:hover {
