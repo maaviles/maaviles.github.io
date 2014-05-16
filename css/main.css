@@ -256,6 +256,9 @@ header {
     margin-right: auto;
     border-radius: 50%;
     border: 7px solid white; }
+  header div {
+    width: 1000px;
+    margin: 0 auto; }
   header h1 {
     font-size: 5em;
     padding-top: 4%;
