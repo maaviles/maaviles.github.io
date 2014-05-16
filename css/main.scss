@@ -5,7 +5,7 @@
 @import "bitters/bitters";
 
 $mobile: new-breakpoint(max-width 480px);
-$tablet: new-breakpoint(max-width 950px);
+$tablet: new-breakpoint(max-width 1000px);
 $large: new-breakpoint(max-width 1024px);
 
 header {
@@ -27,6 +27,14 @@ header {
   div {
     width: 1000px;
     margin: 0 auto;
+    @include media($mobile) {
+      width: auto;
+      margin: auto;
+    }
+    @include media($tablet) {
+      width: auto;
+      margin: auto;
+    }
   }
   h1 {
     font-size: 5em;
