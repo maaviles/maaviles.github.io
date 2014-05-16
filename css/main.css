@@ -269,6 +269,10 @@ header {
       header h1 {
         text-align: center;
         padding-left: 0; } }
+    @media screen and (min-width: 1024px) {
+      header h1 {
+        text-align: center;
+        padding-left: 0; } }
     header h1 span {
       margin-left: -25px;
       color: #294d6b; }
