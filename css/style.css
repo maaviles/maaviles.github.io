@@ -894,9 +894,9 @@
 	
 		#contact .box {
 			position: relative;
-			margin: 2% 20% 2% 20%
-			bottom: 0;
+			margin: 2% 13% 2% 13%;
 			font-size: 1.5vw;
+			bottom: 0;
 			
 			-moz-transition: all 1s ease;
 			-webkit-transition: all 1s ease;
