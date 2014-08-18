@@ -889,12 +889,14 @@
 		background-color:rgba(0, 0, 0, 0.4);
 		color: #fff;
 		padding: .5em;
-		margin: 2em 15em 2em 15em;
+		margin: 2% 20% 2% 20%;
 	}
 	
 		#contact .box {
 			position: relative;
+			margin: 2% 20% 2% 20%
 			bottom: 0;
+			font-size: 1.5vw;
 			
 			-moz-transition: all 1s ease;
 			-webkit-transition: all 1s ease;
